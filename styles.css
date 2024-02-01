@@ -14,10 +14,22 @@ header {
 
 nav ul {
     background-color: #ff7eb3;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
 }
 
 nav a {
     color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ff4e50;
 }
 
 section {
@@ -25,21 +37,25 @@ section {
     color: #fff;
     padding: 20px;
     text-align: center;
+    margin: 20px;
 }
 
-.cta-button {
-    background: #ff4e50;
-    padding: 10px 20px;
-    color: #fff;
-    font-size: 18px;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s ease-in-out;
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    transition: transform 0.3s ease-in-out;
 }
 
-.cta-button:hover {
-    background: #f9d423;
-    transform: scale(1.1);
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.email {
+    color: #ff4e50;
+    font-weight: bold;
 }
 
 footer {
